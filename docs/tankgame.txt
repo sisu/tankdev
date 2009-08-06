@@ -1,0 +1,39 @@
+Tank AI game for Lua
+====================
+
+Tank features:
+ * radar, shows all enemies in the map
+ * 360 moving barrel, shoots ballz!
+ * forward/reverse, static speed
+ * turn left/right
+ * own position on the map: x,y,angle
+ * barrels angle
+
+pseudo!
+
+class Tank
+{
+	/* tank variables */
+	radar() -> returns array of x,y positions of living enemies
+	barrelAngle() -> return barrel angle
+	position() -> x,y,angle - tanks own position and angle in the map
+	moving() -> nil/for/back
+	turning() -> nil/left/right
+	turningbarrel() -> nil/left/right
+	barrelStatus() -> true/false - is the barrel ready to shoot
+	
+	/* movement */
+	moveForward()
+	moveBackward()
+	turnLeft()
+	turnRight()
+	barrelLeft()
+	barrelRight()
+
+	stop() -> stop all movement, equivalent of calling all above
+	stopMove() -> stop moving
+	stopTurn() -> stop turning
+	stopBarrel() -> stop barrel turning
+
+	shoot() -> shoot the barrel
+}
