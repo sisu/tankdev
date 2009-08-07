@@ -1,0 +1,2 @@
+void render();
+void initGL();
